@@ -25,6 +25,10 @@ var PORT = process.env.PORT || 5800;
 
 // routes
 
+app.get('/',(req,res)=>{
+    res.send("Wellcome to Ampex Education Live Server")
+})
+
 app.post('/usersdetails', (req, res) => {
     console.log(req.body)
     var user = new Users(req.body)
