@@ -38,7 +38,7 @@ PORT=5500                                  <br/>
 
 **📡 API Endpoints**                                           <br/>
 Method      Endpoint          Description                       <br/>
-  |              |                  |                            <br/>
+  |  -------    |  ----------      |                            <br/>
 POST	     /usersdetails     Store user enrollment data          <br/>
 
 
