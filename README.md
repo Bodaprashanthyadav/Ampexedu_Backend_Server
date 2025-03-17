@@ -36,10 +36,10 @@ MONGO_URI=your_mongodb_connection_string   <br/>
 PORT=5500                                  <br/>
 
 
-**📡 API Endpoints**                                           <br/>
+**📡 API Endpoints**                                                          <br/>
 Method  --------   Endpoint    ---------      Description                       <br/>
-    |  ------------    |  ------------      |                            <br/>
-POST	     /usersdetails     Store user enrollment data          <br/>
+    |  ------------    |  ------------      |                                     <br/>
+POST	  ------------     /usersdetails    ------------   Store user enrollment data          <br/>
 
 
 **ampex-backend/**                                      <br/>
