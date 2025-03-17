@@ -23,11 +23,11 @@ A backend server built with Node.js, Express.js, and MongoDB for handling user e
 ✅ CORS enabled for frontend communication
 ✅ Environment variables for secure configuration
 
-**🛠 Tech Stack**
-Backend: Node.js, Express.js
-Database: MongoDB, Mongoose
-Middleware: CORS, body-parser
-Environment Management: dotenv
+**🛠 Tech Stack**<br/>
+1.Backend: Node.js, Express.js<br/>
+2.Database: MongoDB, Mongoose<br/>
+3.Middleware: CORS, body-parser<br/>
+4.Environment Management: dotenv<br/>
 
 
 
