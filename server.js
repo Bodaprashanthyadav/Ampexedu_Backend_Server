@@ -1,7 +1,8 @@
 const express = require('express')
 const cors = require('cors')
 var app = express()
-app.use(cors())
+app.use(cors({ origin: "https://ampexeducom.vercel.app" }))
+
 const dotenv = require('dotenv')
 dotenv.config();
 // mongoDB cnnection
