@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
-
+app.use(cors({ origin: "https://ampexeducom.vercel.app/" }));
+app.use(cors())
 const dotenv = require('dotenv')
 dotenv.config();
 // mongoDB cnnection
@@ -13,7 +14,7 @@ const bodyParser = require('body-parser')
 var app = express()
 var Users = require('./Model/UsersDetails.model')
 
-app.use(cors())
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
