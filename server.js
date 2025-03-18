@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
-app.use(cors({ origin: "https://ampexeducom.vercel.app/" }));
-app.use(cors())
+var app = express()
+app.use(cors({ origin: "https://ampexeducom.vercel.app" }));
 const dotenv = require('dotenv')
 dotenv.config();
 // mongoDB cnnection
@@ -11,11 +11,11 @@ mongoose.connect(process.env.MONGO_URI)
     .catch((err) => { console.log('MongoDB Failed to  connect' + err) })
 
 const bodyParser = require('body-parser')
-var app = express()
+
 var Users = require('./Model/UsersDetails.model')
 
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 var PORT = process.env.PORT || 5800;
