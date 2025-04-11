@@ -14,7 +14,7 @@ let transporter = nodemailer.createTransport({
 
 let message = {
     from:"b.prash2001@gmail.com",
-    to:`${email}`,
+    to:"b.prash2001@gmail.com",
     subject: `Mr. ${fullname} Showed Interest in Enrolling for ${courseInterested}`,
     text: `Dear Admin/Staff,
 
