@@ -2,9 +2,10 @@ const express = require('express')
 const cors = require('cors')
 var app = express()
 app.use(cors())
-
+const nodemailer= require("nodemailer")
 const dotenv = require('dotenv')
 dotenv.config();
+
 // mongoDB cnnection
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGO_URI)
@@ -14,7 +15,7 @@ mongoose.connect(process.env.MONGO_URI)
 const bodyParser = require('body-parser')
 
 var Users = require('./Model/UsersDetails.model')
-
+var Email = require('./Email')
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -32,11 +33,13 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/usersdetails', (req, res) => {
-    console.log(req.body)
+ 
+
+     console.log(req.body)
     var user = new Users(req.body)
     user.save().then(data => {
         res.status(200).json({ msg: 'Thank You! We Will Get Back to You Soon!' });
-
+        Email(req.body) // userdetails sent to Admin mail
     })
         .catch(err => {
             res.status(500).json({ msg: 'Error in submiting Data' })
@@ -47,6 +50,4 @@ app.post('/usersdetails', (req, res) => {
 
 
 
-
 app.listen(PORT, () => { console.log(`Server is running on ${PORT}`) })
-
