@@ -23,7 +23,7 @@ It also includes a **Mail notification system** that alerts the admin, reception
 ✅ Express middleware for request parsing            <br/>
 ✅ CORS enabled for frontend communication           <br/>
 ✅ Environment variables for secure configuration    <br/>
-✅ Email Notification System using Nodemailer for real-time alerts to staff/admin   <br/>
+✅ Email Notification System using Nodemailer for real-time alerts to staff/admin to getback to the user  <br/>
 
 **🛠 Tech Stack**<br/>
 1.Backend: Node.js, Express.js       <br/>
