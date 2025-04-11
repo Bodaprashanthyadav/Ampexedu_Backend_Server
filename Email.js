@@ -13,7 +13,7 @@ let transporter = nodemailer.createTransport({
  var {fullname,email,mobile,courseInterested} = formdata
 
 let message = {
-    from:"info@ampexedu.com",
+    from:"b.prash2001@gmail.com",
     to:`${email}`,
     subject:`Mr ${fullname} Showed Intersted to Enrolled the Course`,
     text:`Dear Admin/stuff,
