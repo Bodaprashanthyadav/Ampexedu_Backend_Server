@@ -2,8 +2,8 @@
 
 
 **📌 Ampex Education - Backend Server**
-A backend server built with Node.js, Express.js, and MongoDB for handling user enrollments and course details. 
-It also includes a mail notification system that alerts the admin, receptionist, and staff in real-time whenever a user submits the enrollment form.
+A backend server built with **Node.js, Express.js, and MongoDB** for handling user enrollments and course details. 
+It also includes a **Mail notification system** that alerts the admin, receptionist, and staff in real-time whenever a user submits the enrollment form.
 
 
 **📖 Table of Contents**     <br/>
