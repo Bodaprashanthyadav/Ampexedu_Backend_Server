@@ -1,7 +1,7 @@
 **Here Is my Ampex-Education_Backend_Server(users Enrollements) https://ampexedu-backend-server.onrender.com    (Link to Access):**
 
 
-**📌 Ampex Education - Backend Server  
+**📌 Ampex Education - Backend Server**
 A backend server built with Node.js, Express.js, and MongoDB for handling user enrollments and course details. 
 It also includes a mail notification system that alerts the admin, receptionist, and staff in real-time whenever a user submits the enrollment form.
 
@@ -48,7 +48,7 @@ POST	---     /usersdetails   ---   Store user enrollment data and trigger admin 
 │── Model/                                               <br/>
 │   ├── UsersDetails.model.js  # User schema             <br/>
 │── node_modules/                                        <br/>
-├── Email.js   # ✅ Nodemailer logic for Gmail          <br/>
+├── Email.js      # ✅ Nodemailer logic for Gmail          <br/>
 │── .gitignore                                           <br/>
 │── .env                                                  <br/>
 │── package.json                                          <br/>
